@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortSentry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-black via-slate-950 to-zinc-900 text-white flex items-center justify-center px-6">
+    <div class="max-w-4xl text-center">
+        <div class="inline-flex items-center rounded-full border border-red-500/30 bg-red-500/10 px-4 py-1 text-sm text-red-300 mb-6">
+            AI-Powered Network Threat Intelligence
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-black tracking-tight leading-tight">
+            Real-Time Network
+            <span class="text-red-500">Behavioral Monitor</span>
+        </h1>
+
+        <p class="mt-6 text-lg md:text-xl text-slate-300 max-w-2xl mx-auto">
+            Detect anomalous traffic patterns from live network flows using a machine-learning model trained on CIC-IDS-2017 derived features.
+        </p>
+
+        <div class="mt-10 flex justify-center">
+            <a href="/scan"
+               class="rounded-2xl bg-red-600 hover:bg-red-500 px-8 py-4 text-lg font-semibold shadow-lg shadow-red-900/40 transition">
+                Scan Now
+            </a>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+            <div class="rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl p-5">
+                <h3 class="text-lg font-semibold">20-Second Scan</h3>
+                <p class="text-slate-400 mt-2 text-sm">Captures live packets and converts them into flow-based features.</p>
+            </div>
+            <div class="rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl p-5">
+                <h3 class="text-lg font-semibold">Anomaly Detection</h3>
+                <p class="text-slate-400 mt-2 text-sm">Uses Isolation Forest to flag suspicious network behavior.</p>
+            </div>
+            <div class="rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl p-5">
+                <h3 class="text-lg font-semibold">Threat Report</h3>
+                <p class="text-slate-400 mt-2 text-sm">Generates a per-flow report with scores, ports, protocol, and risk.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
